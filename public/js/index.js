@@ -1,3 +1,5 @@
+const { response } = require("express");
+
 let transactions = [];
 let myChart;
 
@@ -101,5 +103,48 @@ function sendTransaction(isAdding) {
         transaction.value *=-1;
     }
 
-    // add  to beginning of current array
+    // add  to beginning of current array of data
+    transactions.unshift(transaction);
+
+    // re-run logic to populate ui with new record
+    populateChart();
+    populateTable();
+    populateTotal();
+
+    // also send to server
+    fetch("/api/transaction", {
+        method: "POST",
+        body: JSON.stringify(transaction),
+        headers: {
+            Accept: "application/json"
+        }
+    })
+    .then(response => {
+        return response.json();
+    })
+    .then(data => {
+        if (data.errors) {
+            errorEl.textContent = "Missing Information";
+        } else {
+            // clear form 
+            nameEl.value = "";
+            amountEl.value = "";
+        }
+    })
+    .catch(err => {
+        // fetch failed, so save in idexed db
+        saveRecord(transaction);
+
+        // clear form
+        nameEl.value = "";
+        amountEl.value = "";
+    });
 }
+
+document.querySelector("#add-btn").onclick = function() {
+    sendTransaction(true);
+};
+
+document.querySelector("#sub-btn").onclick = function() {
+    sendTransaction(false);
+};
