@@ -1,9 +1,14 @@
-
   # Project Title
   Budget Tracker
 
   # Description
-  This project involved refactoring code to update an existing budget tracker application to allow for offline access and functionality. The user will be able to add expenses and deposits to their budget with or without a connection. If the user enters transactions offline, the total should be updated when they're brought back online. This application is deployed to Heroku.
+  This project involved refactoring code to update an existing budget tracker application to allow for offline access and functionality. The user will be able to add     expenses and deposits to their budget with or without a connection. If the user enters transactions offline, the total should be updated when they're brought back       online. 
+  
+  This application is deployed to Heroku here: https://polar-inlet-88127.herokuapp.com/ 
+  
+  ![budget-tracker](https://user-images.githubusercontent.com/88639772/148704991-216ae2a0-f570-4ff4-ad63-458f2bd0716e.png)
+
+
 
   # Table of Contents 
   * [Installation](#-Installation)
