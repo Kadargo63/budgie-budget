@@ -7,27 +7,34 @@
 
   # Table of Contents 
   * [Installation](#-Installation)
+  * [Technologies](#-Technologies)
   * [Usage](#-Usage)
-  * [License](#-Installation)
-  * [Contributing](#-Contributing)
-  * [Tests](#-Tests)
   * [Questions](#-Contact-Information)
       
   # Installation
-  Clone the repo to your local development environment. 
+  Clone the repo to your local development environment.
   
+  `git clone https://github.com/Kadargo63/budgie-budget.git`
+  
+  Navigate to the budgie-budget folder directory using the command prompt.
+  
+  Run `npm install` to install all dependencies: compression, express, mongoose, morgan, nodemon.
+  
+  Run `npm start` to run the application in terminal or bash.
+  
+  Use http://localhost:3001 [or whatever terminal port you have specified] in your browser
+
+  # Technologies
+  
+  * MongoDB
+  * Express
+  * Mongoose
+  * Compression
+  * Morgan
+  * Nodemon
+
   # Usage
-    Use http://localhost:3001 [or whatever terminal port you have specified] in your browser
-  
-  # License 
-  GNU AGPLv3
-  * As this license list was not comprehensive, if you need another license, use the contact  information below to ask for license to be added. 
-  
-  # Contributing 
-  na
-  
-  # Tests
-  na
+  Use this simple application to track your spending.
   
   # Contact Information 
   * GitHub Username: Kadargo63
