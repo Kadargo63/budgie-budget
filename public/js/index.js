@@ -114,7 +114,8 @@ function sendTransaction(isAdding) {
         method: "POST",
         body: JSON.stringify(transaction),
         headers: {
-            Accept: "application/json"
+            Accept: "application/json, text/plain, */*",
+            "Content-Type": "application/json"
         }
     })
     .then(response => {
