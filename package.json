@@ -1,0 +1,27 @@
+{
+  "name": "budgie-budget",
+  "version": "1.0.0",
+  "description": "budget tracker",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kadargo63/budgie-budget.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kadargo63/budgie-budget/issues"
+  },
+  "homepage": "https://github.com/Kadargo63/budgie-budget#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.5",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
+}

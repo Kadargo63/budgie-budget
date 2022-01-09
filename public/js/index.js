@@ -1,5 +1,3 @@
-const { response } = require("express");
-
 let transactions = [];
 let myChart;
 
@@ -64,7 +62,7 @@ function populateChart() {
 
     let ctx = document.getElementById("myChart").getContext("2d");
 
-    myChart = new CharacterData(ctx, {
+    myChart = new Chart(ctx, {
         type: 'line',
         data: {
             labels,
